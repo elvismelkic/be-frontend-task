@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import logo from "../logo.svg";
 import BeComponent from "./BeComponent";
 import "../css/App.css";
-import { fetchColors } from "../utils/api";
 
 class App extends Component {
   state = {
