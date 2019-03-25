@@ -36,8 +36,6 @@ export default class BeComponent extends Component {
         Math.random() > 0.5 ? this.state.colors[0] : this.state.colors[1];
 
       this.setState({ activeColor: randomColor });
-
-      console.log(randomColor);
     }
   };
 
@@ -47,7 +45,6 @@ export default class BeComponent extends Component {
 
   render() {
     const { loading, error, activeColor } = this.state;
-    console.log(this.state);
     return (
       <Fragment>
         {error !== null ? (
