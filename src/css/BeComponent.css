@@ -1,6 +1,6 @@
 .be-component {
   width: 10%;
   height: 50px;
-  background-color: red;
   margin-bottom: 20px;
+  cursor: default;
 }
