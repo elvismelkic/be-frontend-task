@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import logo from "../logo.svg";
 import BeComponent from "./BeComponent";
 import "../css/App.css";
+import { fetchColors } from "../utils/api";
 
 class App extends Component {
   state = {
@@ -20,9 +21,6 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
           <BeComponent text={inputValue} />
           <input type="text" onChange={this.handleInputChange} />
           <a
